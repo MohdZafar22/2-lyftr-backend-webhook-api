@@ -52,8 +52,6 @@ The system securely ingests WhatsApp-like webhook messages with **HMAC authentic
 
 ---
 
----
-
 ## ⚙️ Setup & Run (Windows)
 
 ### Prerequisites
@@ -66,6 +64,8 @@ The system securely ingests WhatsApp-like webhook messages with **HMAC authentic
 $env:WEBHOOK_SECRET="testsecret"
 $env:DATABASE_URL="sqlite:////data/app.db"
 
+
+## 📁 Project Structure
 ├── app
 │ ├── main.py # FastAPI app and routes
 │ ├── config.py # Environment configuration
@@ -80,5 +80,5 @@ $env:DATABASE_URL="sqlite:////data/app.db"
 ├── send_webhook.ps1 # PowerShell script to test webhook
 └── README.md
 
-## 📁 Project Structure
+
 
