@@ -66,5 +66,19 @@ The system securely ingests WhatsApp-like webhook messages with **HMAC authentic
 $env:WEBHOOK_SECRET="testsecret"
 $env:DATABASE_URL="sqlite:////data/app.db"
 
+├── app
+│ ├── main.py # FastAPI app and routes
+│ ├── config.py # Environment configuration
+│ ├── models.py # Database initialization
+│ ├── storage.py # Database operations
+│ ├── logging_utils.py # Structured JSON logging
+│ └── metrics.py # Metrics helpers
+│
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── send_webhook.ps1 # PowerShell script to test webhook
+└── README.md
+
 ## 📁 Project Structure
 
